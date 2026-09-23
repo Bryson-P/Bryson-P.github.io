@@ -1,49 +1,15 @@
-# About
-Minimal is a modern fully responsive theme for personal resumes and portfolios based on latest Bootstrap (4.4.1).
-It contains components designed for professional persons and freelancers which present your experiences, skills, references, projects and services.
+# analyticsbybryson.com
 
-# Credits
-- [jQuery](https://jquery.com/)
-- [Bootstrap](https://getbootstrap.com/)
-- [SmoothScroll](http://iamdustan.com/smoothscroll/)
-- [Google Fonts](https://www.google.com/fonts)
-- [Popper.js](https://popper.js.org/)
+Personal portfolio site for Bryson Pelechaty, served by GitHub Pages from this repository
+at [analyticsbybryson.com](https://analyticsbybryson.com) (see `CNAME`).
 
-# Structure
--- assets  
----- css (styles)  
----- img (images, icons)  
----- js (javascript)  
--- dist (builded files)  
----- css (buildes styles)  
----- js  (buildes javascript)  
--- .browserslistrc (postcss setup)    
--- 404.html (HTTP Error page)  
--- components.html - (all Boostrap components with custom styles)  
--- Gruntfile.js (dev and build Grunt setup - https://gruntjs.com/)  
--- index.html (protfolio web)  
--- package.json (dependencies) 
+Static HTML — no build step. Push to `master` and GitHub Pages publishes it.
 
-# Dev requirements
-- [Node.js](https://nodejs.org/)  
-- [NPM](https://www.npmjs.com/)  
+- `index.html` — the site
+- `404.html` — not-found page
+- `css/custom.css` — site-specific styles; **put new CSS here**
+- `dist/css/main.css`, `dist/js/all.js` — compiled theme assets (jQuery + Bootstrap 4 + theme JS)
+- `profile.jpg` — profile photo; `og-image.jpg` — social/link-preview image
 
-# Dev commands
-npm install - install all dependencies   
-grunt - run Browsersync, watch file changes and live reload page when .css or js files change
-grunt build - build CSS and JS
-
-# Styles structure
--- components (all components styles)
--- type (common styles, eg. typographics)
--- layout (layout and grid styles)
--- mixins
--- themes (color themes)
--- _variables.scss (custom variables)
--- _variables-cleaner.scss (clean unnecessary bootstrap variables)
--- main.scss (entrypoint)
-
-## How to change theme
-1. open /assets/css/main.scss
-2. comment/uncomment theme (rows 8 - 11)
-3. run grunt build
+Built on the "Minimal" Bootstrap 4 template by Daniel Duran. The template's SCSS sources and
+Grunt build were removed; they remain in this repository's git history if ever needed.

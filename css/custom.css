@@ -1,0 +1,29 @@
+/* Custom overrides for the "Minimal" template.
+   Loaded after dist/css/main.css so these rules win.
+   The SCSS build is gone — put site-specific styles here. */
+
+:root {
+	--site-blue: #1569C7;
+}
+
+/* Site background. Was set with inline style="background-color:#1569C7"
+   attributes on the body, header and nav; defined once here instead. */
+body,
+.header,
+.header .container-fluid-limited,
+.sections-nav {
+	background-color: var(--site-blue);
+}
+
+/* The template styles the 404 page red, which is close to unreadable on
+   the blue background. White matches the rest of the site. */
+.error {
+	color: #fff;
+}
+
+/* The profile photo is a square crop, but object-fit keeps it from
+   stretching if it is ever swapped for a portrait-shaped image. */
+.jumbotron-img {
+	object-fit: cover;
+	object-position: center 30%;
+}
